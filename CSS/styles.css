@@ -12,23 +12,8 @@
     box-sizing: border-box;
   }
 
-html {
-    height: 100%;
-    margin: 0 auto;
-    overflow-x: hidden;
-    width: 100%;
-    -ms-text-size-adjust: 100%;
-    -webkit-text-size-adjust: 100%;
-  }
-
-  .main-header,
-  .main-nav,
-  .featuredTea,
-  .mission,
-  .contact,
-  .footer {
-    display: flex;
-  }
+  
+  
 
 
 /*====================================  2. Typography ========================================*/
@@ -41,9 +26,28 @@ body {
     text-align: center;
 }
 
+a {
+  text-decoration: underline;
+}
+
 
 
 /*====================================  3. Structure Styles ==================================*/
+
+.main-header,
+.main-nav,
+.featuredTea,
+.mission,
+.contact,
+.footer,
+.container
+.mission-container {
+  display: flex;
+}
+
+.mission-container > * {
+  justify-content: center;
+}
 
 
 
@@ -62,7 +66,7 @@ img.teas{
 }
 
 
-/*navigation*/
+/*header styles*/
 
 .main-header {
   
@@ -75,6 +79,20 @@ img.teas{
 header.main-header {
   height: 69px;
 }
+
+.mission-header {
+  background-color: black;  
+  flex-direction: column;
+  justify-content: center;  
+  flex-wrap: nowrap;
+  width: 1200px;  
+}
+
+.mission-header h4, h2 {
+  margin: 0.5em 0 0.5em 0;
+}
+
+/*navigation*/
 
 .main-nav {
   
@@ -95,27 +113,45 @@ header.main-header {
 
 /*====================================  6. Page Styles  =======================================*/
 
-.mission-hero {  
+/*  mission container */
+.mission-hero { 
+  
+  justify-content: center;
   background-image: url("../Pictures/img-mission-background.webp");
   background-color: black;
-  height: 700px;    
+  height: 700px;      
   background-position: center;
-  background-size: cover;
+  /*background-size: cover;*/
   background-repeat: no-repeat;   
 }
 
-#mission{ 
+.mission-hero { 
   display: flex;
   align-items: center;
   justify-content: center;
   
 }
 
-.mission-header {
-  background-color: black;  
-  flex-direction: column;
-  justify-content: center;  
-  flex-wrap: nowrap;
-  width: 100%;  
+/* Featured Tea Container*/
+
+.featured-container {
+  display: flex;
+  flex-wrap: wrap;    
 }
+
+.featured-container > * {
+  flex: 1 1 33%;     
+}
+
+.featured-tea-header {
+  width: 1000px;
+}
+
+/*location container*/
+.locations-container {
+  display: flex;
+  flex-direction: row;
+      
+}
+
 
