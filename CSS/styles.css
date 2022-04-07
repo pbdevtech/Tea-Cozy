@@ -12,6 +12,10 @@
     box-sizing: border-box;
   }
 
+  figure {
+    margin: auto;
+  }
+
   
   
 
@@ -41,7 +45,9 @@ a {
 .contact,
 .footer,
 .container
-.mission-container {
+.mission-container,
+.tea-container,
+.mission-hero {
   display: flex;
 }
 
@@ -94,13 +100,11 @@ header.main-header {
 
 /*navigation*/
 
-.main-nav {
-  
+.main-nav {  
   align-items: flex-end;
   justify-content: space-between;
   gap: 10px;
   margin-right: 10px;
-
 }
 
 
@@ -114,44 +118,40 @@ header.main-header {
 /*====================================  6. Page Styles  =======================================*/
 
 /*  mission container */
-.mission-hero { 
-  
+.mission-hero {
+  width: 1200px;
+  margin: auto; 
   justify-content: center;
   background-image: url("../Pictures/img-mission-background.webp");
   background-color: black;
   height: 700px;      
-  background-position: center;
-  /*background-size: cover;*/
+  background-position: center;  
   background-repeat: no-repeat;   
 }
 
-.mission-hero { 
-  display: flex;
+.mission-hero {   
   align-items: center;
-  justify-content: center;
-  
+  justify-content: center;  
 }
 
 /* Featured Tea Container*/
 
-.featured-container {
-  display: flex;
-  flex-wrap: wrap;    
-}
-
-.featured-container > * {
-  flex: 1 1 33%;     
-}
-
-.featured-tea-header {
+.featured-tea-container {
   width: 1000px;
+  margin: auto;
+}
+
+.tea-container {  
+  flex-wrap: wrap;  
+}
+
+.tea-container > * {
+  flex: 1 1 30%;
+  margin-top: 1em;
+  
 }
 
 /*location container*/
-.locations-container {
-  display: flex;
-  flex-direction: row;
-      
-}
+
 
 
