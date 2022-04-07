@@ -1,0 +1,121 @@
+/* Site Stylesheet
+  1. Global Styles
+  2. Typography Styles
+  3. Structure Styles
+  4. Module Styles
+  5. Component Styles
+  6. Page Styles
+======================================== */
+
+/*====================================  1. Global Styles ======================================*/
+* {
+    box-sizing: border-box;
+  }
+
+html {
+    height: 100%;
+    margin: 0 auto;
+    overflow-x: hidden;
+    width: 100%;
+    -ms-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+  }
+
+  .main-header,
+  .main-nav,
+  .featuredTea,
+  .mission,
+  .contact,
+  .footer {
+    display: flex;
+  }
+
+
+/*====================================  2. Typography ========================================*/
+body {
+    font-family: Helvetica;
+    font-size: 22px;
+    color: seashell;
+    background-color: black;
+    opacity: 0.9;
+    text-align: center;
+}
+
+
+
+/*====================================  3. Structure Styles ==================================*/
+
+
+
+
+
+/*====================================  4. Module Styles =====================================*/
+
+img.teas{
+  height: 200px;
+  width: 300px;
+}
+
+.logo {
+  height: 50px;
+  margin-left: 10px;
+}
+
+
+/*navigation*/
+
+.main-header {
+  
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid seashell;   
+  
+}
+
+header.main-header {
+  height: 69px;
+}
+
+.main-nav {
+  
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 10px;
+  margin-right: 10px;
+
+}
+
+
+
+/*====================================  5. Component Styles ==================================*/
+
+
+
+
+
+/*====================================  6. Page Styles  =======================================*/
+
+.mission-hero {  
+  background-image: url("../Pictures/img-mission-background.webp");
+  background-color: black;
+  height: 700px;    
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;   
+}
+
+#mission{ 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+}
+
+.mission-header {
+  background-color: black;  
+  flex-direction: column;
+  justify-content: center;  
+  flex-wrap: nowrap;
+  width: 100%;  
+}
+
