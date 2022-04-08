@@ -38,6 +38,10 @@ a {
   text-decoration: underline;
 }
 
+a:visited {
+  color: seashell;
+}
+
 .contact a{
   color: seashell;
   text-decoration: none;
@@ -94,7 +98,10 @@ img.teas{
 /*header styles*/
 
 .main-header {
-  
+  position: fixed;
+  top: 0; 
+  width: 100%; 
+  background-color: black;
   justify-content: space-between;
   align-items: center;
   border-bottom: 1px solid seashell;   
@@ -149,6 +156,7 @@ header.main-header {
 }
 
 .mission-hero {   
+  margin-top: 70px;
   align-items: center;
   justify-content: center;  
 }
